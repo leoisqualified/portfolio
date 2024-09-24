@@ -7,5 +7,5 @@ function Project ({title, description, link}) {
         </div>
      );
 }
- 
+
 export default Project;

@@ -5,8 +5,8 @@ import About from './components/about';
 function App() {
   return (
     <div className='App'>
-      <section>
       <About />
+      <section id='projects'>
         <h1>Projects</h1>
         <Project title='#'
         description='#'
