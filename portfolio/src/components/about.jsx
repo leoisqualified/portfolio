@@ -1,4 +1,4 @@
-const About = () => {
+function About () {
     return ( 
         <React.Fragment>
             <h1>

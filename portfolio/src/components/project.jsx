@@ -1,4 +1,4 @@
-const Project = ({title, description, link}) => {
+function Project ({title, description, link}) {
     return ( 
         <div className='project'>
             <h3>{title}</h3>
