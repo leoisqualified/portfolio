@@ -1,15 +1,26 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 function About () {
+    const titles = ['UI/UX Designer','Data Analyst', 'Data Scientist', 
+    'Machine Learning Engineer']
+    const [currentTitleIndex, setCurrentTitleIndex] = useState(0);
+
+    useEffect(() => {
+        //change the titles every 3 seconds
+        const intervalId = setInterval(() => {
+            setCurrentTitleIndex((prevIndex) => (prevIndex + 1) % titles.length);}, 3000);
+
+        return () =>
+        clearInterval(intervalId);}, [titles.length]
+    );
+    
     return ( 
         <React.Fragment>
-            <h1>
-                About Me
-            </h1>
             <p1>
-                Hi, I am Eleos Andy Adenutsi, a data analyst and machine learning engineer with
-                experience in...
-            </p1>
+                I am a
+            </p1> 
+            <span className='rotating'>{titles[currentTitleIndex]}</span>
+            
         </React.Fragment>
      );
 }

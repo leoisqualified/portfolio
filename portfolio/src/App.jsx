@@ -2,6 +2,8 @@ import './App.css'
 import Project from './components/project'
 import About from './components/about';
 import Navbar from './components/navbar';
+import Skills from './components/skills';
+import Contact from './components/contact';
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
         description='#'
         link='#'/>
       </section>
+      <Skills />
+      <Contact />
     </div>
   );
 }
