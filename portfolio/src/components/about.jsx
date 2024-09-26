@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 function About () {
-    const titles = ['UI/UX Designer','Data Analyst', 'Data Scientist', 
-    'Machine Learning Engineer']
+    const titles = ['UI/UX Designer','Data Analyst', 'Data Scientist']
     const [currentTitleIndex, setCurrentTitleIndex] = useState(0);
 
     useEffect(() => {
@@ -17,7 +16,7 @@ function About () {
     return ( 
         <React.Fragment>
             <p1>
-                I am a
+                Hi! I am a
             </p1> 
             <span className='rotating'>{titles[currentTitleIndex]}</span>
             
