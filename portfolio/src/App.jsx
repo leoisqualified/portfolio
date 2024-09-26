@@ -10,18 +10,7 @@ function App() {
     <div className='App'>
       <Navbar />
       <About />
-      <section id='projects'>
-        <h1>Projects</h1>
-        <Project title='#'
-        description='#'
-        link='#'/>
-        <Project title='#'
-        description='#'
-        link='#'/>
-        <Project title='#'
-        description='#'
-        link='#'/>
-      </section>
+      <Project />
       <Skills />
       <Contact />
     </div>
