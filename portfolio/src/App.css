@@ -50,18 +50,30 @@ p {
   align-items: center;
 }
 
+article b {
+  color: #f0a500;
+}
+
+.intro {
+  font-weight: bold;
+  font-size: 80px;
+  padding-left: 20px;
+}
+
 .rotating {
   font-weight: bold;
   color: #f0a500;
   transition: opacity 0.5s ease-in-out;
-  font-size: 80px;
-  padding-left: 10px;
+  font-size: 100px;
+  padding-left: 160px;
 }
+
 
 .about-me {
   font-size: 30px;
   color: #666;
   margin: 20px;
+  justify-content: flex-end;
 }
 
 @media (max-width: 768px) {
@@ -78,9 +90,17 @@ p {
   }
 }
 
+.profile-pic {
+  margin-left: 1100px;
+  margin-top: -500px;
+  max-width: 300px;
+  height: auto;
+  object-fit: cover;
+}
+
 /* Navbar Styling */
 .navbar {
-  background-color: rosybrown;
+  background-color: white;
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
@@ -91,14 +111,14 @@ p {
 }
 
 .navbar-logo a {
-  color: #fff;
+  color: black;
   font-size: 24px;
   font-weight: bold;
   text-decoration: none;
 }
 
 .navbar-logo a:hover {
-  color: #333;
+  color: #f0a500;
 }
 
 .navbar-links {
@@ -113,14 +133,14 @@ p {
 }
 
 .navbar-links a {
-  color: #fff;
+  color: black;
   text-decoration: none;
   font-size: 18px;
   transition: color 0.3s ease;
 }
 
 .navbar-links a:hover {
-  color: #333; /* Change to your preferred hover color */
+  color: #f0a500; /* Change to your preferred hover color */
 }
 
 /* Make the navbar responsive */
@@ -142,17 +162,19 @@ p {
 
   .navbar-links.active {
     display: flex;
-  }
+  }  
 }
 
 /* Skills Section Styling */
 .skills-section {
   background-color: #d4d4d4;
   padding: 20px;
+  text-align: center;
 }
 
 .skills-lists {
   display: flex;
+  text-align: center;
 }
 .skills-list {
   gap: 10px;
