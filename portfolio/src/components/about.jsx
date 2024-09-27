@@ -14,12 +14,14 @@ function About () {
     );
     
     return ( 
-        <React.Fragment>
-            <p1>
-                Hi! I am a
-            </p1> 
+        <React.Fragment> 
             <span className='rotating'>{titles[currentTitleIndex]}</span>
-            
+            <br />
+            <article className='about-me'>
+                My name is Eleos Andy Adenutsi I am passionate about
+                <br />
+                Data Analysis and Data Science. I am proficient in User Interface and User Experience, Data Manipulation and Building Machine Learning Models.  
+            </article>
         </React.Fragment>
      );
 }

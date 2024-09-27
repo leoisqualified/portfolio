@@ -1,6 +1,5 @@
 import React from 'react';
 
-//creating the navbar component
 function Navbar() {
   return (
     <nav className="navbar">

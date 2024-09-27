@@ -58,9 +58,10 @@ p {
   padding-left: 10px;
 }
 
-p1 {
-  font-size: 50px;
+.about-me {
+  font-size: 30px;
   color: #666;
+  margin: 20px;
 }
 
 @media (max-width: 768px) {
@@ -148,18 +149,19 @@ p1 {
 .skills-section {
   background-color: #d4d4d4;
   padding: 20px;
-  text-align: center;
 }
 
-.skills-list {
+.skills-lists {
   display: flex;
-  justify-content: center;
-  gap: 50px;
-  list-style-type: none;
+}
+.skills-list {
+  gap: 10px;
   padding: 0;
+  margin-left: 40px;
 }
 
 .skills-list li {
+  list-style-type: none;
   font-size: 18px;
   padding: 8px 0;
 }
@@ -178,29 +180,55 @@ p1 {
   margin-top: 20px;
 }
 
-.project-card {
-  background-color: white;
+.projects-card {
+  background-color: ivory;
   border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
   box-sizing: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   box-shadow: 0.3s ease;
+  padding: 10px;
 }
 
-.project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-.project-card h3 {
+.projects-card h3 {
   font-size: 20px;
   margin: 10px 0;
   color: #333;
 }
 
-.project-card p {
+.projects-card a {
+  text-decoration: none;
   font-size: 16px;
   color: #666;
 }
-  
 
+.projects-card a:hover {
+  color: #f0a500;
+}
+  
+/* Contact Styling */
+.contact-section {
+  padding: 40px;
+}
+
+.contact-details {
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.contact-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+.contact-links a {
+  text-decoration: none;
+}
+
+.contact-links li {
+  display: flex;
+  gap: 10px;
+}
