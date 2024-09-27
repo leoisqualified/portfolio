@@ -17,19 +17,21 @@ function About () {
     );
     
     return ( 
-        <React.Fragment> 
-            <h1 className='intro'>I am a chosen</h1><span className='rotating'>{titles[currentTitleIndex]}</span>
-            <br />
-            <article className='about-me'>
-                My name is <b>Eleos Andy Adenutsi</b> I am passionate about
+        <React.Fragment>
+            <section className='about-section'> 
+                <h1 className='intro'>I'm a</h1><span className='rotating'>{titles[currentTitleIndex]}</span>
                 <br />
-                Data Analysis and Data Science. I am proficient in 
-                <br />
-                User Interface and User Experience, Data Manipulation 
-                <br />
-                and Building Machine Learning Models.  
-            </article>
-            <img src= { profile_pic } className='profile-pic'/>
+                <article className='about-me'>
+                    My name is <b>Eleos Andy Adenutsi</b> I am passionate about
+                    <br />
+                    Data Analysis and Data Science. I am proficient in 
+                    <br />
+                    User Interface and User Experience, Data Manipulation 
+                    <br />
+                    and Building Machine Learning Models.  
+                </article>
+                <img src= { profile_pic } className='profile-pic'/>
+            </section>
         </React.Fragment>
      );
 }
