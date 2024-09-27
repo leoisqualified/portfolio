@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
+/* import picture */
+import profile_pic from '../assets/img/profile_pic.png';
+
 function About () {
     const titles = ['UI/UX Designer.','Data Analyst.', 'Data Scientist.']
     const [currentTitleIndex, setCurrentTitleIndex] = useState(0);
@@ -15,7 +18,7 @@ function About () {
     
     return ( 
         <React.Fragment> 
-            <h1 className='intro'>I'm a</h1><span className='rotating'>{titles[currentTitleIndex]}</span>
+            <h1 className='intro'>I am a chosen</h1><span className='rotating'>{titles[currentTitleIndex]}</span>
             <br />
             <article className='about-me'>
                 My name is <b>Eleos Andy Adenutsi</b> I am passionate about
@@ -26,7 +29,7 @@ function About () {
                 <br />
                 and Building Machine Learning Models.  
             </article>
-            <img src='#' className='profile-pic'/>
+            <img src= { profile_pic } className='profile-pic'/>
         </React.Fragment>
      );
 }

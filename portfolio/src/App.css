@@ -91,11 +91,14 @@ article b {
 }
 
 .profile-pic {
-  margin-left: 1100px;
-  margin-top: -500px;
+  margin-left: 1000px;
+  margin-top: -600px;
   max-width: 300px;
-  height: auto;
+  height: 200px;
+  width: 200px;
   object-fit: cover;
+  border: 2px solid transparent;
+  border-radius: 50%;
 }
 
 /* Navbar Styling */
