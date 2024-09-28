@@ -176,45 +176,55 @@ article b {
 
 /* Skills Section Styling */
 .skills-section {
-  background-color: #d4d4d4;
   padding: 20px;
-  height: 300px;
+  background-color: #eee8da;
   text-align: center;
-
 }
 
+.skills-section h1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.skills-section i {
+  color: #f0a500;
+}
 .skills-lists {
   display: flex;
-  margin-left: 350px;
+  flex-direction: column;
+  align-items: center;
 }
 
 .skills-list1 {
   display: flex;
-  gap: 40px;
-  padding: 0;
-  list-style-type: none;
-  margin-left: 60px;
+  gap: 30px;
   margin-top: 20px;
 }
 
 .skills-list2 {
   display: flex;
-  gap:60px;
+  gap: 60px;
+}
+
+ul {
+  list-style: none;
   padding: 0;
-  list-style-type: none;
-  margin-left: -650px;
-  margin-top: 100px;
 }
 
-.skills-list1 li, .skills-list2 {
+ul li {
+  display: flex;  /* Flexbox for horizontal alignment */
+  align-items: center;  /* Vertically center text with image */
+  margin-bottom: 10px;
   font-style: italic;
-  font-weight: bold;
-  font-size: 20px;
+  font-weight: bold;  
 }
 
-.skills-list1, .skills-list2 img {
-  size: 50px;
+ul li img {
+  width: 30px;  /* Adjust the width to control the size of the icons */
+  height: 30px;
+  margin-right: 10px;  /* Space between the image and the text */
 }
+
+
 
 
 /* Projects Styling */
