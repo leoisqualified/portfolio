@@ -2,19 +2,20 @@ import React from "react";
 
 function Project ( ) {
     const projectList = [
-        { name : 'Project 1', description : 'This is the project description',imageUrl:'#', link : '#'},
-        { name : 'Project 2', description : 'This is the project description',imageUrl:'#', link : '#'},
-        { name : 'Project 3', description : 'This is the project description',imageUrl:'#', link : '#'},
-        { name : 'Project 4', description : 'This is the project description',imageUrl:'#', link : '#'},
-        { name : 'Project 5', description : 'This is the project description',imageUrl:'#', link : '#'},
-        { name : 'Project 6', description : 'This is the project description',imageUrl:'#', link : '#'},
-        { name : 'Project 7', description : 'This is the project description',imageUrl:'#', link : '#'},
-        { name : 'Project 8', description : 'This is the project description',imageUrl:'#', link : '#'},
+        { name : 'FIGMA PRODUCT DESIGN', description : 'Used Figma in Prototyping the website of DiamondTours'
+        ,imageUrl:'#', link : '#'},
+        { name : 'PROJECT-2', description : 'This is the project description',imageUrl:'#', link : '#'},
+        { name : 'PROJECT-3', description : 'This is the project description',imageUrl:'#', link : '#'},
+        { name : 'PROJECT-4', description : 'This is the project description',imageUrl:'#', link : '#'},
+        { name : 'PROJECT-5', description : 'This is the project description',imageUrl:'#', link : '#'},
+        { name : 'PROJECT-6', description : 'This is the project description',imageUrl:'#', link : '#'},
+        { name : 'PROJECT-7', description : 'This is the project description',imageUrl:'#', link : '#'},
+        { name : 'PROJECT-8', description : 'This is the project description',imageUrl:'#', link : '#'},
     ]
     return ( 
         <React.Fragment>
             <div className='projects-section'>
-                <h1>My Projects</h1>
+                <h1>My <i>Projects</i></h1>
                 <div className="projects-grid">
                     {projectList.map((project, index) => (
                         <div className="projects-card" key={index}>

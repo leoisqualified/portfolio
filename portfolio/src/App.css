@@ -177,7 +177,7 @@ article b {
 /* Skills Section Styling */
 .skills-section {
   padding: 20px;
-  background-color: #eee8da;
+  background-color: #eae1df;
   text-align: center;
 }
 
@@ -185,9 +185,6 @@ article b {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.skills-section i {
-  color: #f0a500;
-}
 .skills-lists {
   display: flex;
   flex-direction: column;
@@ -231,7 +228,7 @@ ul li img {
 .projects-section {
   padding: 40px;
   text-align: center;
-  background-color: #f4f4f4;
+  background-color: #ffffff;
 }
 
 .projects-grid {
@@ -242,8 +239,8 @@ ul li img {
 }
 
 .projects-card {
-  background-color: ivory;
-  border: 1px solid #ddd;
+  background-color: rgb(247, 247, 223);
+  border: 1px solid #f7d180;
   border-radius: 8px;
   overflow: hidden;
   box-sizing: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -267,6 +264,48 @@ ul li img {
 .projects-card a:hover {
   color: #f0a500;
 }
+
+/* Certificate Styling */
+.certificates-section {
+  text-align: center;
+  padding: 20px;
+  background-color: #eae1df;
+}
+
+.certificates-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: ivory;
+  padding: 10px;
+  border: 1px solid #f0a500;
+  border-radius: 8px;
+  text-align: center;
+  height: 100%;  
+}
+
+.certificates-card img {
+  width: 100%;
+  height: auto;
+  border: 1px solid;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.certificates-card a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #007BFF;;
+}
+
+.certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px; 
+    margin-top: 20px;
+  }
+
   
 /* Contact Styling */
 .contact-section {
