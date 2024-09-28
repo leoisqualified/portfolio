@@ -7,8 +7,8 @@ import excel from '../assets/img/excel.png'
 function Project() {
     const projectsList = [
         {
-            title: "Project 1",
-            description: "A data analysis project focusing on electricity comsumption in India",
+            title: "Data Analysis",
+            description: "A data analysis project focusing on electricity comsumption in India using Microsoft Excel",
             imageUrl: excel,
             link: "#"
         },
