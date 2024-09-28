@@ -1,9 +1,12 @@
 import React from "react";
 
+/* importing images */
+import excel from '../assets/img/excel.png';
+
 function Certificates() {
     const certificatesList = [
         {imageUrl:'#', link:'See Credential'},
-        {imageUrl:'#', link:'See Credential'},
+        {imageUrl:excel, link:'See Credential'},
         {imageUrl:'#', link:'See Credential'},
         {imageUrl:'#', link:'See Credential'},
         {imageUrl:'#', link:'See Credential'},
@@ -19,7 +22,7 @@ function Certificates() {
                         certificatesList.map((certificate, index) =>
                         (
                             <div className="certificates-card" key={index}>
-                                <img src='{certificate.imgUrl}' />
+                                <img src={certificate.imageUrl} />
                                 <a href={certificate.link}>See Credential</a>
                             </div>
                         ))}

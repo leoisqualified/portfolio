@@ -1,34 +1,48 @@
 import React from "react";
 
-function Project ( ) {
-    const projectList = [
-        { name : 'FIGMA PRODUCT DESIGN', description : 'Used Figma in Prototyping the website of DiamondTours'
-        ,imageUrl:'#', link : '#'},
-        { name : 'PROJECT-2', description : 'This is the project description',imageUrl:'#', link : '#'},
-        { name : 'PROJECT-3', description : 'This is the project description',imageUrl:'#', link : '#'},
-        { name : 'PROJECT-4', description : 'This is the project description',imageUrl:'#', link : '#'},
-        { name : 'PROJECT-5', description : 'This is the project description',imageUrl:'#', link : '#'},
-        { name : 'PROJECT-6', description : 'This is the project description',imageUrl:'#', link : '#'},
-        { name : 'PROJECT-7', description : 'This is the project description',imageUrl:'#', link : '#'},
-        { name : 'PROJECT-8', description : 'This is the project description',imageUrl:'#', link : '#'},
-    ]
-    return ( 
-        <React.Fragment>
-            <div className='projects-section'>
-                <h1>My <i>Projects</i></h1>
-                <div className="projects-grid">
-                    {projectList.map((project, index) => (
-                        <div className="projects-card" key={index}>
-                            <h3>{project.name}</h3>
-                            <img src="{project.imageUrl}"/>
+/* import images */
+import excel from '../assets/img/excel.png'
+
+
+function Project() {
+    const projectsList = [
+        {
+            title: "Project 1",
+            description: "A data analysis project focusing on electricity comsumption in India",
+            imageUrl: excel,
+            link: "#"
+        },
+        {
+            title: "Project 2",
+            description: "A machine learning project predicting customer churn.",
+            imageUrl: '#',
+            link: "#"
+        },
+        {
+            title: "Project 3",
+            description: "A web scraping project to collect data from various websites.",
+            imageUrl: '#',
+            link: "#"
+        }
+    ];
+
+    return (
+        <section className="projects-section">
+            <h2>My Projects</h2>
+            <div className="projects-grid">
+                {projectsList.map((project, index) => (
+                    <div className="project-card" key={index}>
+                        <img src={project.imageUrl} />
+                        <div className="project-info">
+                            <h3>{project.title}</h3>
                             <p>{project.description}</p>
-                            <a href='{project.link}'>See Project</a>
+                            <a href={project.link} className="project-link">View Project</a>
                         </div>
-                    ))}
-                </div>
+                    </div>
+                ))}
             </div>
-        </React.Fragment>
-     );
+        </section>
+    );
 }
 
 export default Project;
