@@ -174,54 +174,45 @@ article b {
   }  
 }
 
-/* Skills Section Styling */
+/* skills */
 .skills-section {
-  padding: 20px;
-  background-color: #eae1df;
   text-align: center;
-}
-
-.skills-section h1 {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
 }
 
 .skills-lists {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  grid-gap: 20px; /* Space between grid items */
+  justify-items: center; /* Center the content in each cell */
+  align-items: center; /* Vertically align content */
+}
+
+.skills-lists img {
+  width: 50px; /* Adjust the image size */
+  height: auto;
+}
+
+.skills-list1, .skills-list2 {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-list1 li, .skills-list2 li {
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.skills-list1 {
-  display: flex;
-  gap: 30px;
-  margin-top: 20px;
+h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
 }
 
-.skills-list2 {
-  display: flex;
-  gap: 60px;
-}
 
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-ul li {
-  display: flex;  /* Flexbox for horizontal alignment */
-  align-items: center;  /* Vertically center text with image */
-  margin-bottom: 10px;
-  font-style: italic;
-  font-weight: bold;  
-}
-
-ul li img {
-  width: 30px;  /* Adjust the width to control the size of the icons */
-  height: 30px;
-  margin-right: 10px;  /* Space between the image and the text */
-}
-
-/* src/components/Projects.css */
+/* project */
 .projects-section {
   padding: 40px;
   background-color: #f9f9f9;

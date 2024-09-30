@@ -10,29 +10,48 @@ import seaborn from '../assets/img/seaborn.svg';
 import pandas from '../assets/img/pandas.svg';
 import figma from '../assets/img/figma.svg';
 
-function Skills () {
+function Skills() {
     return (
         <React.Fragment>
             <section className='skills-section'>
                 <h1>My <i>Skills</i></h1>
-                    <div className='skills-lists'>
-                        <ul className='skills-list1'>
-                            <li><img src={python} alt='python logo'/>Python</li>
-                            <li><img src={sql} alt='sql logo'/>SQL</li>
-                            <li><img src={excel} alt='excel logo'/>Excel</li>
-                            <li><img src={pandas} alt='pandas logo'/>Pandas</li>
-                        </ul>
-                        <br />
-                        <ul className='skills-list2'>
-                            <li><img src={matplotlib} alt="matplotlib logo" />Matplotlib</li>
-                            <li><img src={seaborn} alt="seaborn logo" />Seaborn</li>
-                            <li><img src={scikit} alt="scikit learn" />Scikit Learn</li>
-                            <li><img src={figma} alt="Figma" />Figma</li>
-                        </ul>
-                    </div>       
+                <div className='skills-lists'>
+                    <div>
+                        <img src={python} alt='python logo' />
+                        <p>Python</p>
+                    </div>
+                    <div>
+                        <img src={sql} alt='sql logo' />
+                        <p>SQL</p>
+                    </div>
+                    <div>
+                        <img src={excel} alt='excel logo' />
+                        <p>Excel</p>
+                    </div>
+                    <div>
+                        <img src={pandas} alt='pandas logo' />
+                        <p>Pandas</p>
+                    </div>
+                    <div>
+                        <img src={matplotlib} alt="matplotlib logo" />
+                        <p>Matplotlib</p>
+                    </div>
+                    <div>
+                        <img src={seaborn} alt="seaborn logo" />
+                        <p>Seaborn</p>
+                    </div>
+                    <div>
+                        <img src={scikit} alt="scikit learn logo" />
+                        <p>Scikit Learn</p>
+                    </div>
+                    <div>
+                        <img src={figma} alt="Figma logo" />
+                        <p>Figma</p>
+                    </div>
+                </div>
             </section>
         </React.Fragment>
-    )
+    );
 }
 
 export default Skills;
