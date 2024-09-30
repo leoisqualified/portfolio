@@ -39,7 +39,7 @@ p {
   padding: 20px;
 }
 
-/* About Styling */
+/* About */
 .about-section {
   height: 550px;
   width: fit-content;
@@ -71,7 +71,7 @@ article b {
   color: #f0a500;
   transition: opacity 0.5s ease-in-out;
   font-size: 100px;
-  padding-left: 160px;
+  padding-left: 73px;
 }
 
 
