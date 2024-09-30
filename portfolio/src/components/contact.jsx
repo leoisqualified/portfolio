@@ -4,7 +4,7 @@ function Contact () {
     return (
         <React.Fragment>
             <section className='contact-section'>
-                <h1>Get in Touch</h1>
+                <h2>Get in Touch</h2>
                 <div className='contact-details'>
                     <ul className='contact-links'>
                         <li>
@@ -23,6 +23,12 @@ function Contact () {
                         <li>
                             <img src='#'/>
                             <a href='#' target='_blank'>leoisqualified</a>
+                        </li>
+                    </ul>
+                    <ul className='contact-links'>
+                        <li>
+                            <img src='#'/>
+                            <a href='#' target='_blank'>Adenutsi Andy Eleos</a>
                         </li>
                     </ul>
                 </div>

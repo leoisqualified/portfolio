@@ -14,7 +14,7 @@ function Skills() {
     return (
         <React.Fragment>
             <section className='skills-section'>
-                <h1>My <i>Skills</i></h1>
+                <h2>Skills</h2>
                 <div className='skills-lists'>
                     <div>
                         <img src={python} alt='python logo' />
