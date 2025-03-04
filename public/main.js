@@ -1,10 +1,9 @@
 const typingText = document.querySelector(".typing-effect");
 const professions = [
-  "UI/UX Designer",
-  "Software Developer",
-  "Backend Developer",
-  "Data Analyst",
-  "Data Scientist",
+  "Software Developer.",
+  "Backend Developer.",
+  "Data Analyst.",
+  "Data Scientist.",
 ];
 let index = 0;
 let charIndex = 0;
