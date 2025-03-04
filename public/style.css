@@ -125,10 +125,7 @@ body {
   margin-bottom: 1rem;
 }
 
-.hero-text .highlight {
-  color: var(--primary-color);
-}
-
+/* Highlighted Text Effect */
 .hero-text .highlight {
   background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
   background-clip: text;
@@ -136,28 +133,45 @@ body {
   -webkit-text-fill-color: transparent;
   color: transparent; /* Standard fallback */
   font-weight: bold;
-  background-color: rgba(
-    255,
-    64,
-    129,
-    0.2
-  ); /* Light accent-colored background */
   padding: 2px 6px;
   border-radius: 4px;
   position: relative;
-  font-weight: bold;
 }
 
+/* Hero Paragraph */
 .hero-text p {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   margin: 0;
 }
 
+/* Typing Effect */
 .typing-effect {
   color: var(--primary-color);
   font-weight: bold;
 }
 
+/* Hire Me Button */
+.hire-me-button {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background: var(--accent-color);
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hire-me-button:hover {
+  transform: scale(1.05); /* Slightly scale up on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+/* Hero Image */
 .hero-image img {
   width: 100%;
   max-width: 400px;
@@ -168,8 +182,9 @@ body {
 /* Responsive Design */
 @media (max-width: 768px) {
   .hero .container {
-    flex-direction: column;
+    flex-direction: column-reverse; /* Reverse order for mobile */
     text-align: left;
+    gap: 1rem;
   }
 
   .hero-text h1 {
@@ -181,7 +196,8 @@ body {
   }
 
   .hero-image img {
-    max-width: 300px;
+    max-width: 100%;
+    border-radius: 0;
     margin-top: 2rem;
   }
 
@@ -224,5 +240,11 @@ body {
   .navbar .nav-links a:hover {
     border-bottom: none;
     color: var(--primary-color);
+  }
+
+  .hire-me-button {
+    width: 90%; /* Full width on mobile */
+    text-align: center;
+    padding: 0.75rem 1rem; /* Adjust padding for smaller screens */
   }
 }
