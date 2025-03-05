@@ -3,76 +3,100 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Andy Eleos Adenutsi - Portfolio</title>
-    <link rel="stylesheet" href="./style.css" />
+    <title>Adenutsi Andy Eleos - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Manrope:wght@300&display=swap"
-      rel="stylesheet"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Montserrat:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Istok+Web:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="favicon_io/apple-touch-icon.png"
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
     />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="favicon_io/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="favicon_io/favicon-16x16.png"
-    />
-    <link rel="manifest" href="favicon_io/site.webmanifest" />
+    <link rel="stylesheet" href="/style.css" />
   </head>
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-      <div class="container">
-        <a href="#" class="logo">Adenutsi</a>
-        <!-- Hamburger Icon -->
-        <button class="hamburger" aria-label="Toggle navigation">
-          <span class="hamburger-line"></span>
-          <span class="hamburger-line"></span>
-          <span class="hamburger-line"></span>
-        </button>
-        <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+  <body class="bg-[#f9f9f9] font-['Istok_Web'] text-[#222]">
+    <nav
+      id="navbar"
+      class="fixed w-full bg-white/90 backdrop-blur-sm z-50 border-b"
+    >
+      <div class="container mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+          <a href="#" class="text-2xl font-['Pacifico'] text-primary">John</a>
+          <div class="hidden md:flex items-center space-x-8">
+            <a href="#home" class="text-gray-600 hover:text-primary">Home</a>
+            <a href="#projects" class="text-gray-600 hover:text-primary"
+              >Projects</a
+            >
+            <a href="#clients" class="text-gray-600 hover:text-primary"
+              >Clients</a
+            >
+            <a href="#experience" class="text-gray-600 hover:text-primary"
+              >Experience</a
+            >
+            <a href="#contact" class="text-gray-600 hover:text-primary"
+              >Contact</a
+            >
+          </div>
+          <button
+            id="menuBtn"
+            class="md:hidden w-10 h-10 flex items-center justify-center"
+          >
+            <i class="ri-menu-line text-xl"></i>
+          </button>
+        </div>
+      </div>
+      <div id="mobileMenu" class="hidden md:hidden px-6 py-4 space-y-4">
+        <a href="#home" class="block text-gray-600 hover:text-primary">Home</a>
+        <a href="#projects" class="block text-gray-600 hover:text-primary"
+          >Projects</a
+        >
+        <a href="#clients" class="block text-gray-600 hover:text-primary"
+          >Clients</a
+        >
+        <a href="#experience" class="block text-gray-600 hover:text-primary"
+          >Experience</a
+        >
+        <a href="#contact" class="block text-gray-600 hover:text-primary"
+          >Contact</a
+        >
       </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-      <div class="container">
-        <div class="hero-text">
-          <h1>
-            Hello! My name is <span class="highlight">Eleos Andy Adenutsi</span>
-          </h1>
-          <p>I am a <span class="typing-effect"></span></p>
-          <a href="#contact" class="hire-me-button">Hire Me</a>
-        </div>
-        <div class="hero-image">
-          <img
-            src="https://via.placeholder.com/400"
-            alt="Andy's Profile Image"
-          />
+    <section id="home" class="min-h-screen pt-20 relative overflow-hidden">
+      <div class="container mx-auto px-6 py-20">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 mb-10 md:mb-0">
+            <img
+              src="profile.jpg"
+              alt="John Anderson"
+              class="rounded-full w-64 h-64 object-cover mx-auto shadow-xl"
+            />
+          </div>
+          <div class="md:w-1/2 text-center md:text-left">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">
+              Adenutsi Andy Eleos
+            </h1>
+            <h2 class="text-xl md:text-2xl text-gray-600 mb-6">
+              Backend Developer & Data Scientist.
+            </h2>
+            <p class="text-gray-600 mb-8 leading-relaxed">
+              Passionate about creating innovative digital solutions with over 8
+              years of experience.
+            </p>
+            <a
+              href="#projects"
+              class="inline-block bg-primary text-white px-8 py-3 rounded-lg hover:bg-primary/90 transition-colors"
+            >
+              View My Work
+            </a>
+          </div>
         </div>
       </div>
     </section>
 
-    <script src="./main.js"></script>
+    <script type="module" src="/main.js"></script>
   </body>
 </html>

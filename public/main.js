@@ -1,59 +1,40 @@
-const typingText = document.querySelector(".typing-effect");
-const professions = [
-  "Software Developer.",
-  "Backend Developer.",
-  "Data Analyst.",
-  "Data Scientist.",
-];
-let index = 0;
-let charIndex = 0;
-let isDeleting = false;
-
-const type = () => {
-  const currentProfession = professions[index];
-  if (!isDeleting) {
-    typingText.textContent = currentProfession.slice(0, charIndex + 1);
-    charIndex++;
-    if (charIndex === currentProfession.length) {
-      isDeleting = true;
-      setTimeout(type, 2000); // Pause at the end of the word
-    } else {
-      setTimeout(type, 100); // Typing speed
-    }
-  } else {
-    typingText.textContent = currentProfession.slice(0, charIndex - 1);
-    charIndex--;
-    if (charIndex === 0) {
-      isDeleting = false;
-      index = (index + 1) % professions.length; // Move to the next profession
-    }
-    setTimeout(type, 50); // Deleting speed
-  }
-};
-
-type(); // Start the typing effect
-
-// Hamburger Menu Toggle
-const hamburger = document.querySelector(".hamburger");
-const navLinks = document.querySelector(".nav-links");
-
-hamburger.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
-  hamburger.classList.toggle("active");
+document.getElementById("menuBtn").addEventListener("click", function () {
+  document.getElementById("mobileMenu").classList.toggle("hidden");
 });
 
-// Close Navbar on Scroll
+document
+  .getElementById("contactForm")
+  ?.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const data = Object.fromEntries(formData.entries());
+
+    const notification = document.createElement("div");
+    notification.className =
+      "fixed bottom-4 right-4 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg";
+    notification.textContent = "Message sent successfully!";
+
+    document.body.appendChild(notification);
+    setTimeout(() => {
+      notification.remove();
+    }, 3000);
+
+    e.target.reset();
+  });
+
+const navbar = document.getElementById("navbar");
+let lastScroll = 0;
 window.addEventListener("scroll", () => {
-  if (navLinks.classList.contains("active")) {
-    navLinks.classList.remove("active");
-    hamburger.classList.remove("active");
+  const currentScroll = window.pageYOffset;
+  if (currentScroll <= 0) {
+    navbar.classList.remove("shadow-lg");
+    return;
   }
-});
-
-// Close Navbar when a link is clicked (optional)
-navLinks.addEventListener("click", () => {
-  if (navLinks.classList.contains("active")) {
-    navLinks.classList.remove("active");
-    hamburger.classList.remove("active");
+  if (currentScroll > lastScroll) {
+    navbar.classList.add("-translate-y-full");
+  } else {
+    navbar.classList.remove("-translate-y-full");
+    navbar.classList.add("shadow-lg");
   }
+  lastScroll = currentScroll;
 });
