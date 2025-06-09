@@ -1034,6 +1034,35 @@
               </li>
 
               <li class="blog-post-item">
+                <a
+                  href="#"
+                  onclick="event.preventDefault(); loadBlogPost('phisher-extension')"
+                >
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/phishing-extension.jpg"
+                      alt="Phisher"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Machine Learning</p>
+                      <span class="dot"></span>
+                      <time datetime="2024-12-15">Dec 15, 2024</time>
+                    </div>
+                    <h3 class="h3 blog-item-title">
+                      Phishing Detector Extension
+                    </h3>
+                    <p class="blog-text">
+                      How I built a browser extension that detects phishing
+                      websites in real-time using Random Forest.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
                 <a href="#">
                   <figure class="blog-banner-box">
                     <img
@@ -1185,6 +1214,44 @@
               </li>
             </ul>
           </section>
+        </article>
+
+        <article
+          class="blog-post"
+          data-page="blog-reader"
+          style="display: none"
+        >
+          <header>
+            <h2 id="blog-title" class="h2 article-title">Loading...</h2>
+            <div class="blog-meta">
+              <p id="blog-category" class="blog-category"></p>
+              <span class="dot"></span>
+              <time id="blog-date"></time>
+            </div>
+          </header>
+
+          <figure style="margin: 20px 0">
+            <img
+              id="blog-banner"
+              src=""
+              alt="Blog banner"
+              style="width: 100%; border-radius: 12px"
+            />
+          </figure>
+
+          <section
+            id="blog-content"
+            class="blog-text"
+            style="line-height: 1.7"
+          ></section>
+
+          <button
+            onclick="changePage('blog')"
+            style="margin-top: 30px"
+            class="btn"
+          >
+            ← Back to Blog
+          </button>
         </article>
 
         <!--

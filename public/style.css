@@ -1196,6 +1196,14 @@ main {
   line-height: 1.6;
 }
 
+.blog-post[data-page="blog-reader"] {
+  padding-top: 100px;
+}
+
+.btn::hover {
+  color: var(--vegas-gold);
+}
+
 /*-----------------------------------*\
   #CONTACT
 \*-----------------------------------*/

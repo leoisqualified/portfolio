@@ -137,3 +137,53 @@ for (let i = 0; i < navigationLinks.length; i++) {
     }
   });
 }
+
+function loadBlogPost(slug) {
+  fetch("/blog/blog.json")
+    .then((res) => res.json())
+    .then((posts) => {
+      const post = posts.find((p) => p.slug === slug);
+      if (!post) {
+        alert("Blog post not found.");
+        return;
+      }
+
+      document.getElementById("blog-title").textContent = post.title;
+      document.getElementById("blog-category").textContent = post.category;
+      document.getElementById("blog-date").textContent = new Date(
+        post.date
+      ).toDateString();
+      document.getElementById("blog-banner").src = post.banner;
+      document.getElementById("blog-banner").alt = post.title;
+      document.getElementById("blog-content").innerHTML = post.content;
+
+      changePage("blog-reader");
+
+      // 👇 Add this to reactivate nav functionality
+      rebindNavLinks();
+    });
+}
+
+function changePage(pageName) {
+  const pages = document.querySelectorAll("[data-page]");
+  pages.forEach((page) => {
+    page.style.display = "none"; // Hide every page — including blog-reader
+  });
+
+  const targetPage = document.querySelector(`[data-page="${pageName}"]`);
+  if (targetPage) {
+    targetPage.style.display = "block"; // Show the selected page
+    window.scrollTo({ top: 0, behavior: "smooth" }); // Optional scroll-to-top
+  }
+}
+
+function rebindNavLinks() {
+  const navLinks = document.querySelectorAll("[data-nav-link]");
+
+  navLinks.forEach((link) => {
+    link.onclick = function () {
+      const pageName = link.textContent.trim().toLowerCase(); // or map manually
+      changePage(pageName);
+    };
+  });
+}

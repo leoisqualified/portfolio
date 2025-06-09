@@ -1,0 +1,19 @@
+[
+  {
+    "slug": "phisher-extension",
+    "title": "Phishing Detector Extension",
+    "category": "Machine Learning",
+    "date": "2024-12-15",
+    "banner": "/assets/images/phishing-extension.jpg",
+    "content": "<p>I built a browser extension that uses a Random Forest model to detect phishing websites. It scans webpage features in real time and warns users of suspicious activity.</p><p>The model was trained on a labeled dataset and deployed inside the extension using WebExtension APIs.</p><p><strong>Tech used:</strong> Python, scikit-learn, JavaScript.</p>"
+  },
+
+  {
+    "slug": "kaggle-titanic",
+    "title": "Kaggle Titanic Survival Prediction",
+    "category": "Data Science",
+    "date": "2024-08-22",
+    "banner": "/assets/images/titanic.jpg",
+    "content": "<p>This project was my introduction to supervised machine learning. I explored the Titanic dataset and built classification models to predict passenger survival.</p><p>I applied feature engineering, handled missing values, and evaluated logistic regression, decision trees, and SVMs.</p><p><strong>Tools:</strong> Pandas, Scikit-Learn, Matplotlib.</p>"
+  }
+]
