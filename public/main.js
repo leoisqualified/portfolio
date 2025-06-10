@@ -139,7 +139,7 @@ for (let i = 0; i < navigationLinks.length; i++) {
 }
 
 function loadBlogPost(slug) {
-  fetch("/blog/blog.json")
+  fetch("./blog/blog.json")
     .then((res) => res.json())
     .then((posts) => {
       const post = posts.find((p) => p.slug === slug);
