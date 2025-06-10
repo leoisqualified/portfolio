@@ -15,5 +15,14 @@
     "date": "2024-08-22",
     "banner": "/assets/images/titanic.jpg",
     "content": "<p>This project was my introduction to supervised machine learning. I explored the Titanic dataset and built classification models to predict passenger survival.</p><p>I applied feature engineering, handled missing values, and evaluated logistic regression, decision trees, and SVMs.</p><p><strong>Tools:</strong> Pandas, Scikit-Learn, Matplotlib.</p>"
+  },
+
+  {
+    "slug": "kaggle competition #1",
+    "title": "Predicting Optimal Fertilizers-Kaggle Competition",
+    "category": "Data Science",
+    "date": "2025-06-10",
+    "banner": "/assets/images/kaggle-competition-1.png",
+    "content": "<p>I've always hated hackatons and competitions, makes me feel small but i decided to give this competition a try.</p><p>I hopped on Kaggle didn't really know what i was looking for and that's when i stumbled upon this competition. Predicting Optimal Fertilizers. Why not? I thought to myself. I knew it was a classification problem. I learnt from my past and first ever competition from Zindi (in which i failed miserably), most datascience competitons is about finetuning. Whoever finetunes better wins</p> I decided i was going to finetune two models, Light Gradient Boosting and Xtreme Gradient Boosting and combine both in the end to make a hybrid model.</p><p><strong>Tools:</strong> Pandas, Scikit-Learn, Matplotlib.</p>"
   }
 ]
