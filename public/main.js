@@ -181,9 +181,28 @@ function rebindNavLinks() {
   const navLinks = document.querySelectorAll("[data-nav-link]");
 
   navLinks.forEach((link) => {
+    const target = link.getAttribute("data-target");
     link.onclick = function () {
-      const pageName = link.textContent.trim().toLowerCase(); // or map manually
-      changePage(pageName);
+      if (target) {
+        window.location.hash = target;
+      }
     };
   });
 }
+
+function handleHashRoute() {
+  const hash = window.location.hash;
+
+  if (hash.startsWith("#blog/")) {
+    const slug = decodeURIComponent(hash.split("/")[1]);
+    loadBlogPost(slug);
+  } else if (hash.startsWith("#")) {
+    const pageName = hash.substring(1);
+    changePage(pageName);
+  } else {
+    changePage("about"); // Default
+  }
+}
+
+window.addEventListener("hashchange", handleHashRoute);
+window.addEventListener("DOMContentLoaded", handleHashRoute);
